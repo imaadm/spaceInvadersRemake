@@ -11,6 +11,9 @@ Implement two versions —
  Your game must implement:
 
 A menu system to select between the two variants
+
 Sound and Music
+
 Not breaking of copyright law
+
 Builds for Mac,PC, and Linux
