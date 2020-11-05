@@ -1,17 +1,19 @@
-# godot_space
-Example space shooter game for coderdojo
+# spaceInvadersRemake
 
-Play online at https://electronstudio.github.io/godot_space/
+Make a 2D action game, built in Godot (or other engine -- Pico-8, Unity, Phaser, etc.), based on an existing early arcade game (e.g., Pong, Breakout, Pac-Man, Defender, Space Invaders, Galaga, Asteroids, etc. -- if it could have existed in 1980 it is an ok fit)
 
-# Credits
+Implement two versions —
 
-Graphics
 
-Bonsaiheldin | http://bonsaiheld.org https://opengameart.org/content/stars-parallax-backgrounds
+ 1. A straightforward version (i.e. a clone)
+ 2. A variant that embellishes upon the original game
 
-http://millionthvector.blogspot.com/
+ Your game must implement:
 
-Sound:
+A menu system to select between the two variants
 
-https://opengameart.org/content/explosion-0
+Sound and Music
 
+Not breaking of copyright law
+
+Builds for Mac,PC, and Linux
