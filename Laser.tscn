@@ -18,3 +18,4 @@ shape = SubResource( 1 )
 rotation = 1.5708
 scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 2 )
+[connection signal="body_entered" from="." to="." method="_on_Laser_body_entered"]

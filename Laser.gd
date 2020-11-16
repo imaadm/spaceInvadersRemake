@@ -19,3 +19,9 @@ func start(pos, dir):
 	rotation = dir
 	position = pos
 	velocity = Vector2(speed, 0).rotated(rotation)
+
+
+func _on_Laser_body_entered(body):
+	if body.is_in_group("enemy"):
+		body.queue_free()
+		queue_free()
