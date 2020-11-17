@@ -21,10 +21,10 @@ func start(pos, dir):
 	velocity = Vector2(speed, 0).rotated(rotation)
 
 
-func _on_Laser_body_entered(body):
-	if body.is_in_group("enemy"):
+func _on_enemyLaser_body_entered(body):
+	if body.is_in_group("player"):
 		body.queue_free()
 		queue_free()
 	#if body.is_in_group("terrain"):
-	#	body.queue_free()
-	#	queue_free()
+		#body.queue_free()
+		#queue_free()

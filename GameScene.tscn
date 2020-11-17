@@ -37,7 +37,9 @@ points = PoolVector2Array( 140, 70, 0, 70, 0, 0, 140, 0 )
 
 [node name="GameScene" type="Node2D"]
 
-[node name="PlayerShip" type="KinematicBody2D" parent="."]
+[node name="PlayerShip" type="KinematicBody2D" parent="." groups=[
+"player",
+]]
 position = Vector2( 512, 560.488 )
 script = ExtResource( 7 )
 __meta__ = {
@@ -55,7 +57,9 @@ texture = ExtResource( 5 )
 position = Vector2( 0, -32.5 )
 rotation = 4.71239
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="." groups=[
+"terrain",
+]]
 tile_set = SubResource( 3 )
 format = 1
 tile_data = PoolIntArray( 65535, 536870913, 0, 16, 536870913, 0, 131071, 536870913, 0, 196607, 536870913, 0, 262143, 536870913, 0, 327679, 536870913, 0, 262160, 536870913, 0, 327688, 3, 0, 393228, 3, 0, 393232, 536870913, 0, 524287, 536870913, 0, 458754, 0, 0, 458759, 0, 0, 458764, 0, 0, 458765, 3, 0, 458767, 3, 0, 458768, 3, 0, 524299, 3, 0, 524305, 3, 0, 524306, 3, 0, 524307, 3, 0, 589835, 3, 0 )
