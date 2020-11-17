@@ -1,8 +1,7 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://physicspack/PNG/Metal elements/elementMetal015.png" type="Texture" id=1]
 [ext_resource path="res://EnemySpawn.gd" type="Script" id=2]
-[ext_resource path="res://Enemy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Timer.gd" type="Script" id=4]
 [ext_resource path="res://spaceshooter assets/PNG/playerShip2_blue.png" type="Texture" id=5]
 [ext_resource path="res://PlayerShip.gd" type="Script" id=7]
@@ -63,10 +62,6 @@ tile_data = PoolIntArray( 65535, 536870913, 0, 16, 536870913, 0, 131071, 5368709
 
 [node name="EnemySpawn" type="Node2D" parent="."]
 script = ExtResource( 2 )
-
-[node name="Enemy" parent="EnemySpawn" groups=[
-"enemy",
-] instance=ExtResource( 3 )]
 
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
