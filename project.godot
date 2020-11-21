@@ -16,12 +16,16 @@ _global_script_class_icons={
 [application]
 
 config/name="spaceInvadersRemake"
-run/main_scene="res://GameScene.tscn"
+run/main_scene="res://Ttile.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 GlobalTimer="*res://Timer.gd"
+
+[display]
+
+window/size/height=680
 
 [input]
 
