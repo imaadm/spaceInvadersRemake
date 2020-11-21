@@ -11,17 +11,19 @@ extents = Vector2( 31.6399, 29.9492 )
 [node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=[
 "enemy",
 ]]
+position = Vector2( 43.0583, 39.2882 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="enemyBlack1" type="Sprite" parent="KinematicBody2D"]
-position = Vector2( 44.7435, 42.9831 )
 scale = Vector2( 0.698584, 0.713963 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( 44.9492, 42.3272 )
 shape = SubResource( 1 )
 
 [node name="enemyLaserBarrel" type="Position2D" parent="KinematicBody2D"]
-position = Vector2( 44.9822, 54.6216 )
+position = Vector2( 0, 12.2499 )
 rotation = 1.5708
