@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://L1EnemySpawn.gd" type="Script" id=2]
+[ext_resource path="res://physicspack/PNG/Backgrounds/colored_land.png" type="Texture" id=3]
+[ext_resource path="res://Timer.gd" type="Script" id=4]
+[ext_resource path="res://spaceshooter assets/PNG/playerShip2_blue.png" type="Texture" id=5]
+[ext_resource path="res://PlayerShip.gd" type="Script" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 48.0613, 33.1185 )
+
+[node name="GameScene" type="Node2D"]
+
+[node name="EnemySpawn" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerShip" type="KinematicBody2D" parent="." groups=[
+"player",
+]]
+position = Vector2( 512.612, 555.998 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerShip"]
+shape = SubResource( 1 )
+
+[node name="Ship2" type="Sprite" parent="PlayerShip"]
+scale = Vector2( 0.843676, 0.843676 )
+texture = ExtResource( 5 )
+
+[node name="LaserBarrel" type="Position2D" parent="PlayerShip"]
+position = Vector2( 0, -32.5 )
+rotation = 4.71239
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="BlueBackground" type="Sprite" parent="Background"]
+position = Vector2( 512.087, 482.57 )
+z_index = -1
+texture = ExtResource( 3 )
