@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 [autoload]
 
 GlobalTimer="*res://Timer.gd"
+GlobalVariables="*res://GlobalVariables.gd"
 
 [display]
 

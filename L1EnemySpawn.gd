@@ -11,8 +11,8 @@ func _ready():
 	enemyscene = load ("res://L1Enemy.tscn")	
 	_spawn_enemies()
 func _spawn_enemies():
-	for j in range (0,3):
-		for i in range (0,9):
+	for j in range (0,4):
+		for i in range (0,11):
 			var enemy = enemyscene.instance()
 			var x = 0+i*95
 			enemy.position.y=j*90

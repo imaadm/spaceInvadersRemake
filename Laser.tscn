@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Laser.gd" type="Script" id=1]
 [ext_resource path="res://spaceshooter assets/PNG/Lasers/laserBlue01.png" type="Texture" id=2]
+[ext_resource path="res://music/invaderkilled.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 27.3041, 5.43762 )
@@ -18,4 +19,9 @@ shape = SubResource( 1 )
 rotation = 1.5708
 scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -20.0
 [connection signal="body_entered" from="." to="." method="_on_Laser_body_entered"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]

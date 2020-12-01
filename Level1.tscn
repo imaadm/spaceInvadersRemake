@@ -1,22 +1,37 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
+[ext_resource path="res://Label2.gd" type="Script" id=1]
 [ext_resource path="res://L1EnemySpawn.gd" type="Script" id=2]
 [ext_resource path="res://physicspack/PNG/Backgrounds/colored_land.png" type="Texture" id=3]
 [ext_resource path="res://Timer.gd" type="Script" id=4]
 [ext_resource path="res://spaceshooter assets/PNG/playerShip2_blue.png" type="Texture" id=5]
+[ext_resource path="res://spaceshooter assets/Stardate81316-aolE.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://PlayerShip.gd" type="Script" id=7]
+[ext_resource path="res://music/invaderkilled.wav" type="AudioStream" id=8]
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 6 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 48.0613, 33.1185 )
 
+[sub_resource type="DynamicFont" id=2]
+size = 20
+extra_spacing_char = 1
+font_data = ExtResource( 6 )
+
 [node name="GameScene" type="Node2D"]
 
 [node name="EnemySpawn" type="Node2D" parent="."]
+position = Vector2( -6, 30 )
 script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -25,7 +40,7 @@ __meta__ = {
 [node name="PlayerShip" type="KinematicBody2D" parent="." groups=[
 "player",
 ]]
-position = Vector2( 512.612, 555.998 )
+position = Vector2( 512.612, 645.998 )
 script = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true
@@ -42,9 +57,25 @@ texture = ExtResource( 5 )
 position = Vector2( 0, -32.5 )
 rotation = 4.71239
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="PlayerShip"]
+stream = ExtResource( 8 )
+volume_db = -10.0
+
 [node name="Background" type="Node2D" parent="."]
 
 [node name="BlueBackground" type="Sprite" parent="Background"]
 position = Vector2( 512.087, 482.57 )
 z_index = -1
 texture = ExtResource( 3 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 963.552
+margin_top = -0.793701
+margin_right = 1003.55
+margin_bottom = 20.2063
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

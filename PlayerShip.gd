@@ -16,6 +16,7 @@ func shoot():
 	var laser = Laser.instance()
 	owner.add_child(laser)
 	laser.transform = $LaserBarrel.global_transform
+	$AudioStreamPlayer.play(0)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 

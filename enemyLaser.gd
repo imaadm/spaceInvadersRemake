@@ -32,7 +32,9 @@ func start(pos, dir):
 
 func _on_enemyLaser_body_entered(body):
 	if body.is_in_group("player"):
-		#body.queue_free()
+		if (GlobalVariables.lives == 0):
+			 get_tree().change_scene("res://Ttile.tscn")
+		GlobalVariables.lives = GlobalVariables.lives -1
 		queue_free()
 	if body.is_in_group("shield1") && hitCount1 == 0:
 		get_node("/root/GameScene/Shield1/Shield").set_texture(shieldTexture2)
@@ -73,21 +75,4 @@ func _on_enemyLaser_body_entered(body):
 		#body.queue_free()
 		queue_free()
 		
-	
-#	if body.is_in_group("shield1"):
-#		match hitCount1:
-#			0:
-#				get_node("/root/GameScene/Shield1/Shield").set_texture(shieldTexture2)
-#				queue_free()
-#				hitCount1 = hitCount1 + 1
-#
-#			1:
-#				get_node("/root/GameScene/Shield1/Shield").set_texture(shieldTexture3)
-#				queue_free()
-#				hitCount1 = hitCount1 + 1
-#
-#			2:
-#				queue_free()
-#				body.queue_free()
-#			_:
-#				hitCount1 = hitCount1 + 1
+

@@ -24,7 +24,17 @@ func start(pos, dir):
 func _on_Laser_body_entered(body):
 	if body.is_in_group("enemy"):
 		body.queue_free()
-		queue_free()
-	#if body.is_in_group("terrain"):
+		$AudioStreamPlayer.play(0)
+		$shot2_asset.hide()
+		$CollisionShape2D.set_deferred("disabled", true)
+		GlobalVariables.kills = GlobalVariables.kills + 1
+		#if (GlobalVariables.kills >= 44)
+			#get_tree().change_scene()
+	#if body.is_in_group("shield1"):
 	#	body.queue_free()
-	#	queue_free()
+
+
+
+func _on_AudioStreamPlayer_finished():
+	queue_free()
+

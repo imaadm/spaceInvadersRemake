@@ -12,6 +12,7 @@ var shootOnce = true
 
 func shoot():
 	if shootOnce == true:
+		$AudioStreamPlayer.play()
 		var laser = Laser.instance()
 		owner.add_child(laser)
 		laser.transform = $enemyLaserBarrel.global_transform
