@@ -19,7 +19,8 @@ func shoot():
 	$AudioStreamPlayer.play(0)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-
+	if Input.is_action_pressed("menu"):
+		get_tree().change_scene("res://Ttile.tscn")
 	if Input.is_action_pressed("ui_left"):
 		self.position.x += -speed*delta
 	if Input.is_action_pressed("ui_right"):

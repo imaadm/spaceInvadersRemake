@@ -1,7 +1,7 @@
 extends Node2D
 
 var bulletScene = preload("res://Scenes/BulletLevel2.tscn")
-var enemyScene = preload("res://Scenes/EnemyLevel2.tscn")
+var enemyScene = preload("res://Scenes/enemyLevel2.tscn")
 var playerScene = preload("res://Scenes/PlayerLevel2.tscn")
 var shieldScene = preload("res://Scenes/ShieldLevel2.tscn")
 var enemyArray = []

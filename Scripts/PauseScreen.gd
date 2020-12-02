@@ -10,6 +10,10 @@ func _ready():
 	update_high_score_label()
 
 func _input(_event):
+	if Input.is_action_just_pressed("menu"):
+		Global.player_lives = 3
+		Global.score = 0
+		get_tree().change_scene("res://Ttile.tscn")
 	if Input.is_action_just_pressed("Pause"):
 		if get_tree().paused == false:
 			$PauseLabel.text = "Paused"

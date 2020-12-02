@@ -152,7 +152,7 @@ rect_scale = Vector2( 1.03267, 1.48847 )
 custom_fonts/font = SubResource( 4 )
 text = "Move with Left & Right arrow keys
 Shoot with Space key
-pause with P key
+Pause with P key, exit with esc
 
 To start press R"
 __meta__ = {
