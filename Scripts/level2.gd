@@ -29,7 +29,7 @@ func InitializePlayerLives():
 		var player = playerScene.instance()
 		add_child(player)
 		player.get_child(0).play("default")
-		player.position = Vector2(728 - (64 * i), 32)
+		player.position = Vector2(960 - (64 * i), 32)
 		player.scale = Vector2(4,4)
 
 func InitializeEnemies():
@@ -54,7 +54,7 @@ func InitializeEnemies():
 func InitializeShields():
 	for i in 4:
 		var shield = shieldScene.instance()
-		var spawnLocation = Vector2(130 + (164 * i), 470)
+		var spawnLocation = Vector2(250 + (164 * i), 470)
 		add_child(shield)
 		shield.position = spawnLocation
 		shield.scale = Vector2(7, 7)

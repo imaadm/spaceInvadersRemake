@@ -29,7 +29,7 @@ func _physics_process(_delta):
 			pause_screen.game_over()
 		else:
 			get_tree().reload_current_scene()
-	position.x = clamp(position.x, 40, 728)
+	position.x = clamp(position.x, 40, 1024)
 	motion = move_and_slide(motion)
 
 func self_hit():

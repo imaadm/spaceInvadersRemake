@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var bodyBlocking = false
 var jumpDistance = 28
-var JumpsToSide = 9
+var JumpsToSide = 17
 var jumpsDone = 0
 var pointsOnKill
 
