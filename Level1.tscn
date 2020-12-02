@@ -4,19 +4,19 @@
 [ext_resource path="res://L1EnemySpawn.gd" type="Script" id=2]
 [ext_resource path="res://physicspack/PNG/Backgrounds/colored_land.png" type="Texture" id=3]
 [ext_resource path="res://Timer.gd" type="Script" id=4]
-[ext_resource path="res://spaceshooter assets/PNG/playerShip2_blue.png" type="Texture" id=5]
+[ext_resource path="res://spaceshooter assets/PNG/playerShip2_orange.png" type="Texture" id=5]
 [ext_resource path="res://spaceshooter assets/Stardate81316-aolE.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://PlayerShip.gd" type="Script" id=7]
 [ext_resource path="res://music/invaderkilled.wav" type="AudioStream" id=8]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 20
 font_data = ExtResource( 6 )
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 48.0613, 33.1185 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 20
 extra_spacing_char = 1
 font_data = ExtResource( 6 )
@@ -30,7 +30,7 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
 margin_bottom = 14.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 script = ExtResource( 4 )
 __meta__ = {
@@ -47,7 +47,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerShip"]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="Ship2" type="Sprite" parent="PlayerShip"]
 scale = Vector2( 0.843676, 0.843676 )
@@ -73,7 +73,7 @@ margin_left = 963.552
 margin_top = -0.793701
 margin_right = 1003.55
 margin_bottom = 20.2063
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 script = ExtResource( 1 )
 __meta__ = {
