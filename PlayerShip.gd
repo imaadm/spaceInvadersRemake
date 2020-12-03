@@ -5,7 +5,7 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 export var speed = 200
-var Laser = preload("res://Laser.tscn")
+var Laser = preload("res://Scenes2/Laser3.tscn")
 
 
 # Called when the node enters the scene tree for the first time.

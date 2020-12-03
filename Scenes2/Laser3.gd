@@ -29,7 +29,7 @@ func _on_Laser_body_entered(body):
 		$CollisionShape2D.set_deferred("disabled", true)
 		GlobalVariables.kills = GlobalVariables.kills + 1
 		if (GlobalVariables.kills >= 44):
-			get_tree().change_scene("res://Scenes2/Level3.tscn")
+			get_tree().change_scene("res://stages/stage_game.tscn")
 	#if body.is_in_group("shield1"):
 	#	body.queue_free()
 

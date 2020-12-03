@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Label2.gd" type="Script" id=1]
-[ext_resource path="res://L1EnemySpawn.gd" type="Script" id=2]
+[ext_resource path="res://Scenes2/L3EnemySpawn.gd" type="Script" id=2]
 [ext_resource path="res://physicspack/PNG/Backgrounds/colored_land.png" type="Texture" id=3]
 [ext_resource path="res://Timer.gd" type="Script" id=4]
 [ext_resource path="res://spaceshooter assets/PNG/playerShip2_orange.png" type="Texture" id=5]
