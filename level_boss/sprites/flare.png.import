@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flare.png-17239484d02797ff2a5ffbccd926205c.stex"
+path="res://.import/flare.png-993e40d353a083cf7a48605ae5dd1d44.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/flare.png"
-dest_files=[ "res://.import/flare.png-17239484d02797ff2a5ffbccd926205c.stex" ]
+source_file="res://level_boss/sprites/flare.png"
+dest_files=[ "res://.import/flare.png-993e40d353a083cf7a48605ae5dd1d44.stex" ]
 
 [params]
 

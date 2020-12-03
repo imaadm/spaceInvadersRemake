@@ -11,6 +11,8 @@
 [ext_resource path="res://Sprites/Bullet/BulletHit1.png" type="Texture" id=9]
 
 
+
+
 [resource]
 animations = [ {
 "frames": [ ExtResource( 9 ), ExtResource( 8 ), null ],

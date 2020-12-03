@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemy_clever.png-a3dd6ffcc4c1cf6ea575fedeb816ede2.stex"
+path="res://.import/enemy_clever.png-7502706fb4828278c1d909846803aaee.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/enemy_clever.png"
-dest_files=[ "res://.import/enemy_clever.png-a3dd6ffcc4c1cf6ea575fedeb816ede2.stex" ]
+source_file="res://level_boss/sprites/enemy_clever.png"
+dest_files=[ "res://.import/enemy_clever.png-7502706fb4828278c1d909846803aaee.stex" ]
 
 [params]
 

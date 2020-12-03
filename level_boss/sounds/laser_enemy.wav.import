@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/laser_enemy.wav-9358b36bdc7592c53040d38a26b68cfa.sample"
+path="res://.import/laser_enemy.wav-36e7a9aff0223791302ce76cb530966f.sample"
 
 [deps]
 
-source_file="res://sounds/laser_enemy.wav"
-dest_files=[ "res://.import/laser_enemy.wav-9358b36bdc7592c53040d38a26b68cfa.sample" ]
+source_file="res://level_boss/sounds/laser_enemy.wav"
+dest_files=[ "res://.import/laser_enemy.wav-36e7a9aff0223791302ce76cb530966f.sample" ]
 
 [params]
 

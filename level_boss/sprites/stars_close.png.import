@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stars_close.png-669b88572421da8de8adaf220010f1e1.stex"
+path="res://.import/stars_close.png-0da675b5521148e1fb0575e5534b245c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/stars_close.png"
-dest_files=[ "res://.import/stars_close.png-669b88572421da8de8adaf220010f1e1.stex" ]
+source_file="res://level_boss/sprites/stars_close.png"
+dest_files=[ "res://.import/stars_close.png-0da675b5521148e1fb0575e5534b245c.stex" ]
 
 [params]
 

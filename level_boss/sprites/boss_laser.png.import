@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boss_laser.png-13f138da606cb49328f78a88ce6f8063.stex"
+path="res://.import/boss_laser.png-642673c8ca7ff54cf909a99a13e15109.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/boss_laser.png"
-dest_files=[ "res://.import/boss_laser.png-13f138da606cb49328f78a88ce6f8063.stex" ]
+source_file="res://level_boss/sprites/boss_laser.png"
+dest_files=[ "res://.import/boss_laser.png-642673c8ca7ff54cf909a99a13e15109.stex" ]
 
 [params]
 

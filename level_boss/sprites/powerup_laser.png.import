@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/powerup_laser.png-3e585d63cab6f82b956959e98802b276.stex"
+path="res://.import/powerup_laser.png-88044e65812841c963908079441c0ba4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/powerup_laser.png"
-dest_files=[ "res://.import/powerup_laser.png-3e585d63cab6f82b956959e98802b276.stex" ]
+source_file="res://level_boss/sprites/powerup_laser.png"
+dest_files=[ "res://.import/powerup_laser.png-88044e65812841c963908079441c0ba4.stex" ]
 
 [params]
 

@@ -7,6 +7,8 @@
 [ext_resource path="res://Sprites/Enemy3.2.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Enemy1.2.png" type="Texture" id=6]
 
+
+
 [resource]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 6 ) ],

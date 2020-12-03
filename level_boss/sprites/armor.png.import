@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/armor.png-3e54d97594ab22e1d047f7c11142e1cd.stex"
+path="res://.import/armor.png-6eeadbc032aeb4d3d7e7b444a49172fa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/armor.png"
-dest_files=[ "res://.import/armor.png-3e54d97594ab22e1d047f7c11142e1cd.stex" ]
+source_file="res://level_boss/sprites/armor.png"
+dest_files=[ "res://.import/armor.png-6eeadbc032aeb4d3d7e7b444a49172fa.stex" ]
 
 [params]
 

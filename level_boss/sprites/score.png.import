@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/score.png-98fd24d50ea04cf57a38f70da7ca2cc1.stex"
+path="res://.import/score.png-d75f5f9e067dc7c7ffe21f54984ef9a7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/score.png"
-dest_files=[ "res://.import/score.png-98fd24d50ea04cf57a38f70da7ca2cc1.stex" ]
+source_file="res://level_boss/sprites/score.png"
+dest_files=[ "res://.import/score.png-d75f5f9e067dc7c7ffe21f54984ef9a7.stex" ]
 
 [params]
 

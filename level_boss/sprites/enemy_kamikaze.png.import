@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemy_kamikaze.png-30db8ef9378e7d345ba5b2a4abbd1667.stex"
+path="res://.import/enemy_kamikaze.png-09aab76d17b908967bdefbfae5e26ef9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/enemy_kamikaze.png"
-dest_files=[ "res://.import/enemy_kamikaze.png-30db8ef9378e7d345ba5b2a4abbd1667.stex" ]
+source_file="res://level_boss/sprites/enemy_kamikaze.png"
+dest_files=[ "res://.import/enemy_kamikaze.png-09aab76d17b908967bdefbfae5e26ef9.stex" ]
 
 [params]
 

@@ -1,15 +1,17 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Animated Sprites/Player.tres" type="SpriteFrames" id=1]
-[ext_resource path="res://Audio/Explosion.wav" type="AudioStream" id=2]
+[ext_resource path="res://scripts/PlayerLevel2.gd" type="Script" id=2]
 [ext_resource path="res://Audio/shoot.wav" type="AudioStream" id=3]
-[ext_resource path="res://Scripts/PlayerLevel2.gd" type="Script" id=4]
+[ext_resource path="res://Audio/Explosion.wav" type="AudioStream" id=4]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2.03162, 4.13054 )
 
 [node name="Player" type="KinematicBody2D"]
-script = ExtResource( 4 )
+script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
@@ -22,4 +24,4 @@ shape = SubResource( 1 )
 stream = ExtResource( 3 )
 
 [node name="ExplosionSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
+stream = ExtResource( 4 )

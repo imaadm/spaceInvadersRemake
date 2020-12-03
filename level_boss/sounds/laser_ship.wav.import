@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/laser_ship.wav-6d51080183c69dc509063b519ab0cb38.sample"
+path="res://.import/laser_ship.wav-f9e1448e24c0dbb5c25d51de37f73336.sample"
 
 [deps]
 
-source_file="res://sounds/laser_ship.wav"
-dest_files=[ "res://.import/laser_ship.wav-6d51080183c69dc509063b519ab0cb38.sample" ]
+source_file="res://level_boss/sounds/laser_ship.wav"
+dest_files=[ "res://.import/laser_ship.wav-f9e1448e24c0dbb5c25d51de37f73336.sample" ]
 
 [params]
 

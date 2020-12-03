@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rectangle.png-030378d50cdbf736fdac59dd6a8ba7e8.stex"
+path="res://.import/rectangle.png-32527ca975684cc1f358d683b497d6af.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/rectangle.png"
-dest_files=[ "res://.import/rectangle.png-030378d50cdbf736fdac59dd6a8ba7e8.stex" ]
+source_file="res://level_boss/sprites/rectangle.png"
+dest_files=[ "res://.import/rectangle.png-32527ca975684cc1f358d683b497d6af.stex" ]
 
 [params]
 

@@ -1,11 +1,13 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Scripts/ShieldLevel2.gd" type="Script" id=1]
+[ext_resource path="res://scripts/ShieldLevel2.gd" type="Script" id=1]
 [ext_resource path="res://Animated Sprites/Shield2.tres" type="SpriteFrames" id=2]
 [ext_resource path="res://Animated Sprites/Shield3.tres" type="SpriteFrames" id=3]
 [ext_resource path="res://Animated Sprites/Shield5.tres" type="SpriteFrames" id=4]
 [ext_resource path="res://Animated Sprites/Shield1.tres" type="SpriteFrames" id=5]
 [ext_resource path="res://Animated Sprites/Shield4.tres" type="SpriteFrames" id=6]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2, 2 )

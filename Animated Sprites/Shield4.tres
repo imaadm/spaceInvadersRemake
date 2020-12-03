@@ -4,6 +4,8 @@
 [ext_resource path="res://Sprites/Shield/Shield4.3.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Shield/Shield4.1.png" type="Texture" id=3]
 
+
+
 [resource]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ) ],
