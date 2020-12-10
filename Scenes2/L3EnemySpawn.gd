@@ -12,9 +12,9 @@ func _ready():
 	_spawn_enemies()
 func _spawn_enemies():
 	for j in range (0,4):
-		for i in range (0,11):
+		for i in range (0,11,2):
 			var enemy = enemyscene.instance()
-			var x = 2+i*95
+			var x = 0+i*95
 			enemy.position.y=j*90
 			enemy.position.x=x
 			add_child(enemy)
