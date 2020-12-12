@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Start.gd" type="Script" id=1]
+[ext_resource path="res://Startgame.gd" type="Script" id=1]
 [ext_resource path="res://physicspack/logo/title2.jpg" type="Texture" id=2]
 
 [node name="menu" type="Control"]

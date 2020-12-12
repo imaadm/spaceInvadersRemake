@@ -1,6 +1,6 @@
 extends Area2D
 
-export var armor = 500 setget set_armor
+export var armor = 200 setget set_armor
 const scn_laser     = preload("res://scenes/laser_enemy.tscn")
 const scn_explosion = preload("res://scenes/explosion.tscn" )
 const scn_can = preload("res://scenes/cannon.tscn")
@@ -37,6 +37,7 @@ func shoot():
 	pass
 
 func set_armor(new_value):
+
 	if is_queued_for_deletion(): return
 	if new_value < armor: audio_player.play("hit_enemy")
 	armor = new_value
@@ -45,6 +46,10 @@ func set_armor(new_value):
 		utils.search_node("tex_score").score += score_value
 		create_explosion()
 		queue_free()
+		GlobalVariables.kills = 0
+		GlobalVariables.kills2 = 0
+		get_tree().change_scene("res://GameOver.tscn")
+
 	pass
 
 func shootCan():

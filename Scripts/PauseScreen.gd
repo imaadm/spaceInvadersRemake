@@ -11,6 +11,7 @@ func _ready():
 
 func _input(_event):
 	if Input.is_action_just_pressed("menu"):
+		get_tree().paused = false
 		Global.player_lives = 3
 		Global.score = 0
 		get_tree().change_scene("res://Ttile.tscn")

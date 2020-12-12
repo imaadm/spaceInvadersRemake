@@ -27,8 +27,8 @@ func _on_Laser_body_entered(body):
 		$AudioStreamPlayer.play(0)
 		$shot2_asset.hide()
 		$CollisionShape2D.set_deferred("disabled", true)
-		GlobalVariables.kills = GlobalVariables.kills + 1
-		if (GlobalVariables.kills >= 44):
+		GlobalVariables.kills2 = GlobalVariables.kills2 + 1
+		if (GlobalVariables.kills2 >= 24):
 			get_tree().change_scene("res://stages/stage_game.tscn")
 	#if body.is_in_group("shield1"):
 	#	body.queue_free()

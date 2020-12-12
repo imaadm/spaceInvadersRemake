@@ -6,7 +6,7 @@
 [ext_resource path="res://Timer.gd" type="Script" id=4]
 [ext_resource path="res://spaceshooter assets/PNG/playerShip2_orange.png" type="Texture" id=5]
 [ext_resource path="res://spaceshooter assets/Stardate81316-aolE.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://PlayerShip.gd" type="Script" id=7]
+[ext_resource path="res://Scenes2/L3PlayerShip.gd" type="Script" id=7]
 [ext_resource path="res://music/shoot.wav" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]

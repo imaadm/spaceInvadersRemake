@@ -8,7 +8,7 @@ var enemyscene
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	enemyscene = load ("res://Scenes2/L3Enemy.tscn")	
+	enemyscene = load ("res://L1Enemy.tscn")	
 	_spawn_enemies()
 func _spawn_enemies():
 	for j in range (0,4):

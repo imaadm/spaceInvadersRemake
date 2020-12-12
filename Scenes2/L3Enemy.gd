@@ -28,6 +28,8 @@ func _physics_process(delta):
 		count+=1
 		position.y += SPEED*direction
 	if (count % 625 == 0 && count > 1):
+		GlobalVariables.kills = 0
+		GlobalVariables.kills2 = 0
 		get_tree().change_scene("res://Ttile.tscn")
 #func _process(delta):
 #	var enemyTimer = GlobalTimer.seconds;

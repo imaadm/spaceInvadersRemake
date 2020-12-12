@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/cannon.gd" type="Script" id=1]
-[ext_resource path="res://sprites/boss_laser.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/boss_laser.png" type="Texture" id=2]
 [ext_resource path="res://scenes/laser.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
@@ -29,7 +29,6 @@ script = ExtResource( 1 )
 velocity = Vector2( 0, 400 )
 
 [node name="sprite" parent="." index="0"]
-rotation = 6.28319
 texture = ExtResource( 2 )
 
 [node name="shape" parent="." index="1"]

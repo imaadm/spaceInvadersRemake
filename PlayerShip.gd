@@ -5,7 +5,7 @@ extends KinematicBody2D
 # var a = 2
 # var b = "text"
 export var speed = 200
-var Laser = preload("res://Scenes2/Laser3.tscn")
+var Laser = preload("res://Laser.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -20,6 +20,8 @@ func shoot():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_pressed("menu"):
+		GlobalVariables.kills = 0
+		GlobalVariables.kills2 = 0
 		get_tree().change_scene("res://Ttile.tscn")
 	if Input.is_action_pressed("ui_left"):
 		self.position.x += -speed*delta

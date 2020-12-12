@@ -11,12 +11,12 @@ var Laser = preload("res://enemyLaser.tscn")
 var shootOnce = true
 
 var cont = false
-#func shoot():
-#	if shootOnce == true:
-#		var laser = Laser.instance()
-#		owner.add_child(laser)
-#		laser.transform = $enemyLaserBarrel.global_transform
-#		shootOnce = false
+func shoot():
+	if shootOnce == true:
+		var laser = Laser.instance()
+		owner.add_child(laser)
+		laser.transform = $enemyLaserBarrel.global_transform
+		shootOnce = false
 
 func _physics_process(delta):
 	var enemyTimer = GlobalTimer.seconds;
@@ -28,7 +28,10 @@ func _physics_process(delta):
 		count+=1
 		position.y += SPEED*direction
 	if (count % 625 == 0 && count > 1):
+		GlobalVariables.kills = 0
+		GlobalVariables.kills2 = 0
 		get_tree().change_scene("res://Ttile.tscn")
+		
 #func _process(delta):
 #	var enemyTimer = GlobalTimer.seconds;
 #	if (enemyTimer % 3  == 0 && enemyTimer > 0):

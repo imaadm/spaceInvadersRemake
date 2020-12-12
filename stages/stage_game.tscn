@@ -5,8 +5,8 @@
 [ext_resource path="res://scenes/spawner_powerup.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/starts.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/ship.tscn" type="PackedScene" id=5]
-[ext_resource path="res://sprites/armor.png" type="Texture" id=6]
-[ext_resource path="res://sprites/score.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/score.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/armor.png" type="Texture" id=7]
 [ext_resource path="res://fonts/m5x7.tres" type="DynamicFont" id=8]
 [ext_resource path="res://sprites/button_normal.png" type="Texture" id=9]
 [ext_resource path="res://sprites/button_pressed.png" type="Texture" id=10]
@@ -54,7 +54,9 @@ func _ready():
 	pass
 
 func _on_pressed():
-	get_tree().change_scene(\"res://stages/stage_menu.tscn\")
+	get_tree().change_scene(\"res://Ttile.tscn\")
+	GlobalVariables.kills = 0
+	GlobalVariables.kills2 = 0
 	pass
 
 func _on_ship_tree_exited():
@@ -84,7 +86,7 @@ scale = Vector2( 2.27206, 2.11729 )
 [node name="spr_armor" type="Sprite" parent="hud"]
 position = Vector2( 10, 10 )
 scale = Vector2( 2.07122, 2.49126 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 centered = false
 hframes = 5
 frame = 4
@@ -96,7 +98,7 @@ margin_top = 14.2426
 margin_right = 963.374
 margin_bottom = 34.2426
 rect_scale = Vector2( 1.96935, 2.10056 )
-texture = ExtResource( 7 )
+texture = ExtResource( 6 )
 script = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
